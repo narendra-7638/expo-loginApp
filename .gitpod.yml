@@ -1,12 +1,7 @@
 # List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
 tasks:
   - name: Installing expo-cli
-    command: npm install expo-cli --global # runs during prebuild
-
-  - name: Installing dependencies
-    command: npm install
-
-  - name: Starting Application
+    init: npm install expo-cli --global && npm install # runs during prebuild
     command: npm start
 
     
